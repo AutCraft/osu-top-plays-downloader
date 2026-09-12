@@ -1,1 +1,4 @@
 songs/*
+*.exe
+*.tmp
+node_modules/

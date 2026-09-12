@@ -1,0 +1,12 @@
+{
+  "name": "osu-top-plays-downloader",
+  "version": "1.0.0",
+  "description": "Download osu! players most played or top performance beatmaps",
+  "main": "OSUDownloader.js",
+  "scripts": {
+    "start": "node OSUDownloader.js",
+    "test": "node OSUDownloader.js --test"
+  },
+  "keywords": ["osu", "beatmap", "downloader"],
+  "license": "MIT"
+}

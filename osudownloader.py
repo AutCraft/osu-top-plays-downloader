@@ -157,7 +157,8 @@ def main():
             seen.add(set_info["id"])
             mapsets.append((set_info["id"], set_info["title"]))
 
-    print(f"Found {len(mapsets)} unique beatmapsets to download.\n")
+    total_difficulties = len(raw_maps)
+    print(f"Found {len(mapsets)} unique beatmapsets ({total_difficulties} total difficulties/plays) to download.\n")
 
     success = 0
     for idx, (sid, title) in enumerate(mapsets, 1):
@@ -165,7 +166,7 @@ def main():
         if download_beatmapset(sid, title):
             success += 1
 
-    print(f"\nDone! Downloaded {success}/{len(mapsets)} beatmapsets into './songs/'.")
+    print(f"\nDone! Downloaded {success}/{len(mapsets)} ({total_difficulties} difficulties) beatmapsets into './songs/'.")
 
 
 if __name__ == "__main__":
