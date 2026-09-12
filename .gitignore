@@ -1,4 +1,27 @@
-songs/*
+# Beatmaps & downloads
+songs/
+*.osz
+
+# Binaries & build artifacts
 *.exe
-*.tmp
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Node.js
 node_modules/
+npm-debug.log*
+
+# Temporary & OS files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
